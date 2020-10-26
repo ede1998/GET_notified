@@ -9,4 +9,4 @@ if __name__ == '__main__':
     flask.event_manager.register(mail_sender)
     flask.event_manager.register(persistence)
     logging.basicConfig(level=logging.DEBUG)
-    flask.app.run()
+    flask.app.run(host='0.0.0.0')
